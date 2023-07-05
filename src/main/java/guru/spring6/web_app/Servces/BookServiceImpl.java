@@ -20,4 +20,9 @@ public class BookServiceImpl implements BookService {
         Optional<Book> book = bookRepository.findById(id);
         return book.get();
     }
+
+    @Override
+    public Iterable<Book> getAllBooks() {
+        return bookRepository.findAll();
+    }
 }

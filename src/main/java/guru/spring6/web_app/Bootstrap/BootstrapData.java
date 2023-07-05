@@ -88,8 +88,6 @@ public class BootstrapData implements CommandLineRunner {
         bookRepository.save(savedBook1);
 
 
-
-
         System.out.println("Publishers count " + publisherRepository.count());
         System.out.println("Authors count " + authorRepository.count());
         System.out.println("Books count " + bookRepository.count());

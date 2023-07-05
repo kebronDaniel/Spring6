@@ -5,6 +5,7 @@ import guru.spring6.web_app.Repositories.BookRepository;
 import org.springframework.stereotype.Service;
 
 public interface BookService {
-
     Book findOneById(Long id);
+
+    Iterable<Book> getAllBooks();
 }
